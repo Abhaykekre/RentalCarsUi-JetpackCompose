@@ -60,8 +60,9 @@ fun CarItem(modifier: Modifier = Modifier, car: Car) {
                 CarInfo(car = car)
                 Spacer(modifier = Modifier.height(20.dp))
                 Rating(car = car)
-            }
 
+            }
+            Spacer(modifier = Modifier.height(40.dp))
             BuyButton(car = car)
         }
     }
@@ -76,16 +77,18 @@ fun BuyButton(
         modifier = modifier
             .clip(RoundedCornerShape(40.dp))
             .background(MaterialTheme.colorScheme.surfaceVariant)
-            .padding(vertical = 12.dp)
-            .padding(start = 25.dp, end =  16.dp),
+            .padding(vertical = 8.dp)
+            .padding(start = 25.dp, end = 16.dp),
         verticalAlignment = Alignment.CenterVertically
     ) {
+
         Column {
             Text(
                 text = "${car.rentalDays} Days",
                 fontSize = 12.sp,
                 color = MaterialTheme.colorScheme.onBackground.copy(0.8f)
             )
+
             Text(
                 text = "$${car.price}.00",
                 fontSize = 18.sp,

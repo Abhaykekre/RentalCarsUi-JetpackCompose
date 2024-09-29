@@ -41,8 +41,7 @@ fun Pager(modifier: Modifier = Modifier) {
         )
         Spacer(modifier = Modifier.height(16.dp))
         Row(
-            modifier = Modifier.fillMaxWidth(),
-            horizontalArrangement = Arrangement.Center
+            modifier = Modifier.padding(bottom = 10.dp)
         ) {
             Text(
                 text = "Luxurious",
@@ -78,7 +77,7 @@ fun Pager(modifier: Modifier = Modifier) {
                 )
             }
         }
-        Spacer(modifier = Modifier.height(10.dp))
+
 
         Row(
             verticalAlignment = Alignment.Bottom
