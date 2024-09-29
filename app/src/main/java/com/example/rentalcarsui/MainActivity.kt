@@ -108,9 +108,10 @@ class MainActivity : ComponentActivity() {
                     .padding(horizontal = 26.dp)
                     .align(Alignment.BottomStart)
                     .padding(bottom = 26.dp)
-                    .hazeChild(state = hazeState, shape = RoundedCornerShape(26.dp)),
-
-                )
+                    .hazeChild(
+                        state = hazeState,
+                        shape = RoundedCornerShape(26.dp)
+                    ))
 
 
         }
